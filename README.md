@@ -32,12 +32,6 @@ Columns: 19
 * Family History of Mental Illness: Whether the respondent has a known family history of mental health issues.
 
 
-
-## Dataset Visualization
-
-Here are the first 10 lines of the dataset
-![dde_data](https://github.com/user-attachments/assets/59c4b77e-7bf3-41f9-aedb-cebb6882333a)
-
 ## How to start code
 
 1. **Activate conda environment**
@@ -54,3 +48,8 @@ Here are the first 10 lines of the dataset
    cd dde_project
    python data_loader.py
    ```
+
+## Dataset Visualization
+
+Here are the first 10 lines of the dataset
+![dde_data](https://github.com/user-attachments/assets/59c4b77e-7bf3-41f9-aedb-cebb6882333a)
