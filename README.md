@@ -45,7 +45,6 @@ Columns: 19
    ```
 5. **Run code**
    ```python
-   cd dde_project
    python data_loader.py
    ```
 
