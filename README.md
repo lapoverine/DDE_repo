@@ -45,7 +45,6 @@ Columns: 19
    ```
 5. **Run code**
    ```python
-   cd dde_project
    python data_loader.py
    ```
 
@@ -53,6 +52,7 @@ Columns: 19
 
 Here are the first 10 lines of the dataset
 ![dde_data](https://github.com/user-attachments/assets/59c4b77e-7bf3-41f9-aedb-cebb6882333a)
+<<<<<<< HEAD
 
 ## Dataset information after data type conversion
 
