@@ -1,10 +1,8 @@
 import pandas as pd
 
-FILE_ID = '1rxD968JtKcD3NM8bsSf8t5tJhNCDjR_O'
-file_url = f"https://drive.google.com/uc?id={FILE_ID}"
-file_url = "https://drive.google.com/uc?id=1rxD968JtKcD3NM8bsSf8t5tJhNCDjR_O"
+data_path = 'data/mental_health_data.csv'
 
-raw_data = pd.read_csv(file_url)
+raw_data = pd.read_csv(data_path)
 
 print(raw_data.head(10))
 
@@ -29,3 +27,6 @@ raw_data['Financial Stress'] = raw_data['Financial Stress'].astype('int')
 raw_data['Family History of Mental Illness'] = raw_data['Family History of Mental Illness'].astype('str')
 
 print(raw_data.info())
+
+raw_data.to_parquet('data/mental_health_data.parquet', index=False)
+
