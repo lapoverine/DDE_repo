@@ -24,24 +24,33 @@ dependencies:
   - cramjam=2.9.1=py313hbdb9fe4_0
   - expat=2.7.1=h8ddb27b_0
   - fastparquet=2024.11.0=py313h2cb717b_1
+  - freetype=2.13.3=h0620614_0
   - fsspec=2025.7.0=py313h4442805_0
   - gflags=2.2.2=hd77b12b_1
   - glog=0.5.0=hd77b12b_1
   - intel-openmp=2025.0.0=haa95532_1164
+  - jpeg=9f=ha349fce_0
+  - lcms2=2.16=hb4a4139_0
+  - lerc=3.0=hd77b12b_0
   - libabseil=20250127.0=cxx17_h52369b4_0
   - libbrotlicommon=1.0.9=h827c3e9_9
   - libbrotlidec=1.0.9=h827c3e9_9
   - libbrotlienc=1.0.9=h827c3e9_9
   - libcurl=8.15.0=h2300eb9_0
+  - libdeflate=1.17=h2bbff1b_1
   - libffi=3.4.4=hd77b12b_1
   - libgrpc=1.71.0=hf4237ab_0
   - libmpdec=4.0.0=h827c3e9_0
+  - libpng=1.6.39=h8cc25b3_0
   - libprotobuf=5.29.3=h65a231f_1
   - libre2-11=2024.07.02=h5da7b33_0
   - libssh2=1.11.1=h2addb87_0
   - libthrift=0.15.0=ha2884a9_4
+  - libtiff=4.5.1=hd77b12b_0
+  - libwebp-base=1.3.2=h3d04722_1
   - libzlib=1.3.1=h02ab6af_0
   - lz4-c=1.9.4=h2bbff1b_1
+  - matplotlib-base=3.10.6=py313h26e45b9_0
   - mkl=2025.0.0=h5da7b33_930
   - mkl-service=2.5.2=py313h0b37514_0
   - mkl_fft=1.3.11=py313h5810407_1
@@ -49,6 +58,7 @@ dependencies:
   - numexpr=2.11.0=py313h7660c64_1
   - numpy=2.3.3=py313h050da96_0
   - numpy-base=2.3.3=py313h1e017a8_0
+  - openjpeg=2.5.2=hae555c5_0
   - openssl=3.0.18=h543e019_0
   - orc=2.1.1=hd1c1d5c_0
   - packaging=25.0=py313haa95532_0
@@ -61,6 +71,7 @@ dependencies:
   - python_abi=3.13=1_cp313
   - pytz=2025.2=py313haa95532_0
   - re2=2024.07.02=h214f63a_0
+  - seaborn=0.13.2=py313haa95532_3
   - six=1.17.0=py313haa95532_0
   - snappy=1.2.1=hcdb6601_0
   - sqlite=3.50.2=hda9a48d_1
@@ -141,7 +152,6 @@ dependencies:
       - kiwisolver==1.4.9
       - lark==1.3.0
       - markupsafe==3.0.2
-      - matplotlib==3.10.6
       - matplotlib-inline==0.1.7
       - mistune==3.1.4
       - more-itertools==10.8.0
