@@ -1,2 +1,3 @@
 data/
 api_example/cache/
+*.db
