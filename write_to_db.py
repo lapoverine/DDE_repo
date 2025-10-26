@@ -1,16 +1,19 @@
 import sqlite3
 import pandas as pd
 from sqlalchemy import create_engine
+import os
+from dotenv import load_dotenv
 
-sqlite_conn = sqlite3.connect('creds.db')
-cursor = sqlite_conn.cursor()
-cursor.execute("SELECT * FROM access")
+load_dotenv()
 
-row = cursor.fetchone()
-url, port, user, password = row
-sqlite_conn.close()
+url = os.getenv('DB_URL')
+port = os.getenv('DB_PORT')
+user = os.getenv('DB_USER')
+password = os.getenv('DB_PASS')
+db_name = os.getenv('DB_NAME')
 
-connection_string = f"postgresql://{user}:{password}@{url}:{port}/homeworks"
+
+connection_string = f"postgresql://{user}:{password}@{url}:{port}/{db_name}"
 engine = create_engine(connection_string)
 
 df = pd.read_parquet('data/mental_health_data.parquet')
