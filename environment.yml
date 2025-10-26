@@ -21,6 +21,8 @@ dependencies:
   - bzip2=1.0.8=h2bbff1b_6
   - c-ares=1.34.5=h731ff69_0
   - ca-certificates=2025.9.9=haa95532_0
+  - click=8.2.1=py313haa95532_0
+  - colorama=0.4.6=py313haa95532_0
   - cramjam=2.9.1=py313hbdb9fe4_0
   - expat=2.7.1=h8ddb27b_0
   - fastparquet=2024.11.0=py313h2cb717b_1
@@ -71,6 +73,7 @@ dependencies:
   - pyarrow=19.0.0=py313h885b0b7_2
   - python=3.13.7=h260b955_100_cp313
   - python-dateutil=2.9.0post0=py313haa95532_2
+  - python-dotenv=1.1.0=py313haa95532_0
   - python-tzdata=2025.2=pyhd3eb1b0_0
   - python_abi=3.13=1_cp313
   - pytz=2025.2=py313haa95532_0
@@ -112,7 +115,6 @@ dependencies:
       - cffi==2.0.0
       - charset-normalizer==3.4.3
       - cleo==2.1.0
-      - colorama==0.4.6
       - comm==0.2.3
       - contourpy==1.3.3
       - crashtest==0.4.1
