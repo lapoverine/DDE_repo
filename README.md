@@ -48,11 +48,11 @@ Columns: 19
    python data_loader.py
    ```
 
-## Dataset Visualization
+## Dataset Representation
 
 Here are the first 10 lines of the dataset
+
 ![dde_data](https://github.com/user-attachments/assets/59c4b77e-7bf3-41f9-aedb-cebb6882333a)
-<<<<<<< HEAD
 
 ## Dataset information after data type conversion
 
@@ -80,6 +80,8 @@ Data columns (total 19 columns):
  16  Work/Study Hours                       93800 non-null  int64
  17  Financial Stress                       93800 non-null  int64
  18  Family History of Mental Illness       93800 non-null  object
-dtypes: Int16(4), float64(1), int64(4), object(10)
-memory usage: 11.8+ MB
 ```
+
+## The jupiter notebook file for EDA with data visualization
+
+[You can find it here!](https://nbviewer.org/github/lapoverine/DDE_repo/blob/main/notebooks/EDA.ipynb)
