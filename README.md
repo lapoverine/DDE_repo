@@ -125,4 +125,4 @@ ETL-скрипт делает загрузку датасета, валидац�
    ```
 Пример вывода ETL:
 
-![alt text](image.png)
+<img width="503" height="108" alt="image" src="https://github.com/user-attachments/assets/72dfddf4-5153-4e0b-ab03-78fa82fb7cca" />
