@@ -48,6 +48,32 @@ Columns: 19
    python data_loader.py
    ```
 
+## Project structure
+```
+DDE_REPO/
+│
+├── api_example/                     # Пример с API (chemical compounds and their properties)
+│   ├── api_reader.py                # Скрипт для загрузки данных из API
+│   └── README.md                    # Документация к API
+|
+├── etl/                             
+|   ├── __init__
+|   ├── extract.py                   # Загрузка сырых данных с GD, валидация и сохранение в .csv
+|   ├── load.py                      # Сохранение обработанных данных в .parquet и загрузка до 100 строк в БД
+|   ├── main.py                      # Объединение всех модулей. Требуется минимум один аргумент — file_url
+|   ├── transform.py                 # Преобразование типов данных
+|   └──  validate.py                 # Проверки валидации данных                 
+|
+├── notebooks/                       # Ноутбуки
+|   └── EDA.ipynb                    # EDA с графиками
+|   └── dtypes.ipynb                 # Приведение типов данных
+|
+├── pyproject.toml                   # Poetry: описание зависимостей проекта
+├── poetry.lock                      # Зафиксированные версии библиотек
+├── environment.yml                  # Конфигурация окружения 
+└── README.md                        # Основная документация проекта
+```
+
 ## Dataset Representation
 
 Here are the first 10 lines of the dataset
@@ -82,6 +108,21 @@ Data columns (total 19 columns):
  18  Family History of Mental Illness       93800 non-null  object
 ```
 
-## The jupiter notebook file for EDA with data visualization
+## EDA with data visualization
 
 [You can find it here!](https://nbviewer.org/github/lapoverine/DDE_repo/blob/main/notebooks/EDA.ipynb)
+
+## Запуск ETL 
+ETL-скрипт делает загрузку датасета, валидацию и преобразование сырых данных, сохранение сырого и преобразованного датасета в форматах .csv и .parquet соответственно и запись до 100 строк данных в БД.
+
+1. **Настроить окружение**
+   ```
+   conda env create -f environment.yml
+   ```
+2. **Запуск ETL-процесса**
+   ```
+   python etl/main.py --input https://drive.google.com/uc?id=1rxD968JtKcD3NM8bsSf8t5tJhNCDjR_O --table mental_health_table
+   ```
+Пример вывода ETL:
+
+![alt text](image.png)
